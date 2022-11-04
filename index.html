@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Smythe&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="/index.css" />
+		<title>Sayed's Diner</title>
+	</head>
+	<body>
+		<div class="container">
+			<header class="header">
+				<h1><a href="/">Sayed's Diners</a></h1>
+				<h2>We sell very regular food here!</h2>
+			</header>
+			<main class="content">
+				<section class="menu" id="menu"></section>
+				<section class="order-details" id="order-details"></section>
+				<section class="payment-modal hidden" id="payment-modal">
+					<div class="modal-inner">
+						<h2 class="payment-modal--title">Enter Card Details</h2>
+						<form id="form">
+							<input
+								type="text"
+								placeholder="Enter your name"
+								id="customer-name"
+								name="name"
+								required
+							/><br />
+							<input
+								type="text"
+								placeholder="Enter card number"
+								name="card-number"
+								required
+							/><br />
+							<input
+								type="text"
+								placeholder="Enter CVV"
+								name="cvv"
+								required
+							/><br />
+							<button
+								class="button pay-btn"
+								id="pay-btn"
+								type="submit"
+							>
+								Pay
+							</button>
+						</form>
+						<button class="button cancel-btn" id="cancel-btn">
+							Cancel
+						</button>
+					</div>
+				</section>
+			</main>
+		</div>
+		<script src="/index.js" type="module"></script>
+	</body>
+</html>
